@@ -1,0 +1,59 @@
+
+ 
+ :root{
+    --color-terminal: #01c8e9;
+    --borde-redondo: 10px;
+ }
+    
+ * {
+    font-family: 'Schoolbell', cursive;
+ }
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #01c8e9;
+    color: black;
+}
+
+input, button {
+    border: none;
+    outline: none;
+
+}
+
+main{
+    width: 280px;
+    height: 180px;
+    margin:auto;
+    padding: 50px; 
+    box-shadow: 8px 8px 35px 0px rgb(0 0 0 / 75);
+    border-radius: var(--borde-redondo);
+    background-color: #ffd248;
+   
+}
+ 
+h1{
+    margin: 100;
+}
+
+#cajacifrador, #cajadescifrador, #resultado, #resultadodes {
+    background-color: white ;
+    width: -webkit-fill-available;
+   
+    
+}
+
+#cajacifrador, #cajadescifrador {
+    margin: 10px 0 0;
+    padding: 10px;
+    color: black;
+}
+
+#resultado, #resultadodes {
+    height: 30px;
+    color:#9568a9;
+
+}

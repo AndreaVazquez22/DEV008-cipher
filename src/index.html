@@ -4,11 +4,29 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
+
+    <main>
+      <h1> Escribe tu secreto</h1>
+      <form id = "cifrador" autocomplete ="off"> <!-- Autocomplete sirve para que decidir si en el fromulario aparecen opciones de llenado de campo-->
+        <input id="cajacifrador" spellcheck="false" placeholder="Escribe aquí tu mensaje" type="text" name="textocifrado">
+        <!-- Spellcheck sirve para decidir si verificar errores de deletreado o no/ placeholder sirve para daruna indicación que le ayude a rellenar algun campo-->
+      </form>
+      <div id="resultado"></div>
+    </main>
+    <main>
+      <h1>Descifra tu mensaje</h1>
+      <form id="descifrador" autocomplete="off">
+        <input id="cajadescifrador" spellcheck="false" placeholder="Escribe aquí tu mensaje" type="text" name="textodescifrado">
+      </form>
+      <div id="resultadodes"></div>
+    </main>
+    
+
     <script src="index.js" type="module"></script>
   </body>
 </html>
