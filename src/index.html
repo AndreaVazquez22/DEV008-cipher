@@ -6,27 +6,67 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+
+
   </head>
   <body>
+    
+    <header>Mensaje en la Botella</header>
+    <p>
+    </p>
+    <h2>¡Hola Pirata! Una tripulación enemiga quiere atacar nuestro barco, para salvar a tu Capitan y a todos tus compañeros tienes que enviar y recibir
+      "mensajes secretos" en una botella. Para escribir tus mensajes secretos y descifrarlos usa los siguientes recuadros, elige el número de saltos
+      que quieras para crear tu mensaje y no olvides decirle a tus compañeros cuantos saltos diste para que puedan descifrar tu mensaje secreto.
+      ¡Mucha Suerte!
 
+    </h2>
+    <p>
+
+    </p>
+      
     <main>
+   
       <h1> Escribe tu secreto</h1>
       <form id = "cifrador" autocomplete ="off"> <!-- Autocomplete sirve para que decidir si en el fromulario aparecen opciones de llenado de campo-->
-        <input id="cajacifrador" spellcheck="false" placeholder="Escribe aquí tu mensaje" type="text" name="textocifrado">
+        <input id="mensaje1" spellcheck="false" placeholder="Escribe aquí tu mensaje" type="text" >
         <!-- Spellcheck sirve para decidir si verificar errores de deletreado o no/ placeholder sirve para daruna indicación que le ayude a rellenar algun campo-->
       </form>
-      <div id="resultado"></div>
+      <p>
+      </p>
+      <input type="text" id="resultado">
+      <div class="saltos">
+        <input id="saltos" type="number"  min= "1" max="26" placeholder="Saltos" >
+      </div>
+      <p>
+      </p>
+          <button type="button" id="cifrar" class="btn1">Cifrar</button>
+        
     </main>
+      <p>
+      </p>
     <main>
       <h1>Descifra tu mensaje</h1>
       <form id="descifrador" autocomplete="off">
-        <input id="cajadescifrador" spellcheck="false" placeholder="Escribe aquí tu mensaje" type="text" name="textodescifrado">
+        <input id="mensaje2" spellcheck="false" placeholder="Escribe aquí tu mensaje" type="text" >
       </form>
-      <div id="resultadodes"></div>
-    </main>
-    
+      <p>
+      </p>
 
-    <script src="index.js" type="module"></script>
+    <input type="text" id="resultadodes">
+      <div class="saltos2">
+      <input id="saltos2" type="number"  min= "1" max = "26" placeholder="Saltos">
+      
+      </div>
+      <p>
+      </p>
+      
+        <button type="button" id="descifrar" class="btn2">Descifrar</button>
+      
+    </main> 
+    
+    <script src = "index.js" type="module"></script>
+ 
+
   </body>
 </html>

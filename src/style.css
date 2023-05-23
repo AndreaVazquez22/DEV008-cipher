@@ -1,20 +1,28 @@
 
  
  :root{
-    --color-terminal: #01c8e9;
+    --color-terminal: rgb(1, 200, 233);
     --borde-redondo: 10px;
  }
     
- * {
-    font-family: 'Schoolbell', cursive;
+ h2 { 
+    font-family: 'Pirata One', cursive;
+    text-align: center;
+    font-size: 28px;
+    background-color: 	rgb(255, 255, 255, 85%);
+    border-radius: var(--borde-redondo);
+    width: 1000px;
+    height: 200px;
+    justify-content: center;
+    margin: auto;
+   
+ 
+    
  }
 
 body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #01c8e9;
+   
+    background-image: url("https://img.freepik.com/vector-premium/patron-fisuras-isla-tesoro-vectorial-pulpo-sirena-barco-pirata-fondo-repetido-lindo-islas-marinas-tropicales-arena-palmeras-rocas-volcan-isla-tesoro-paperxa-digital_150240-4455.jpg?w=740");
     color: black;
 }
 
@@ -24,29 +32,51 @@ input, button {
 
 }
 
+
+header{
+    font-family: 'Pirata One', cursive;
+    font-size: 100px;
+    text-align: center;
+    background-color:rgba(255, 255, 255, 0.85);
+    width: 800px;
+    justify-content: center;
+    margin: auto;
+    border-radius: var(--borde-redondo);
+   
+   
+}
+
 main{
     width: 280px;
-    height: 180px;
-    margin:auto;
+    height: 250px;
+    margin: auto;
     padding: 50px; 
     box-shadow: 8px 8px 35px 0px rgb(0 0 0 / 75);
     border-radius: var(--borde-redondo);
-    background-color: #ffd248;
+    background-color: 	rgb(255, 210, 72, 100%);
+    margin: 50 ;
+    font-family: 'Pirata One', cursive;
+    justify-content: center;
+    text-align: center;
+   
+
    
 }
  
 h1{
     margin: 100;
+    font-family: 'Pirata One', cursive;
+    justify-content: center;
 }
 
-#cajacifrador, #cajadescifrador, #resultado, #resultadodes {
-    background-color: white ;
+#cifrador, #descifrador, #resultado, #resultadodes {
+    background-color: rgb(255, 255, 255) ;
     width: -webkit-fill-available;
    
     
 }
 
-#cajacifrador, #cajadescifrador {
+#cifrador, #descifrador {
     margin: 10px 0 0;
     padding: 10px;
     color: black;
@@ -55,5 +85,23 @@ h1{
 #resultado, #resultadodes {
     height: 30px;
     color:#9568a9;
+    padding: 0 10px 10px;
 
 }
+
+#cifrar, #descifrar {
+   color: #fff;
+   background-color: #ED0502;
+   border-radius: 40px;
+   box-shadow: 0 0 0 0 rgba(209, 21, 3, 0.5), 0 0 0 0  rgba(253, 224, 8, 0.5);
+   transition: transform 0.3s ease, box-shadow 0.3s ease  ;
+   font-family: 'Pirata One', cursive;
+   size: 300px;
+   width:80px;
+   height:45px;
+  font-size: 20px;
+
+}
+
+
+
